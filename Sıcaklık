@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Sıcaklık_Hesapla
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btnHesapla_Click(object sender, EventArgs e)
+        {
+            int drc;
+            drc = int.Parse(textBox1.Text);
+            if (drc<0)
+            {
+                label2.Text = "Kırmızı Alarm";
+            }
+            if (drc>0 && drc<20)
+            {
+                label2.Text = "Mavi Alarm";
+            }
+            if (drc>20 && drc<40)
+            {
+                label2.Text = "Yeşil Alarm";
+            }
+            if (drc>40)
+            {
+                label2.Text = "Sarı Alarm";
+            }
+        }
+    }
+}
