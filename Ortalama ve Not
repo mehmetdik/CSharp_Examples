@@ -1,0 +1,59 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace beslik_sistem_ort
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int not1, not2;
+            double ort;
+            not1 = int.Parse(textBox1.Text);
+            not2 = int.Parse(textBox2.Text);
+            ort =(not1 + not2) / 2;
+            label5.Text = ort.ToString();
+            if (ort>=0 && ort<=24)
+            {
+                label6.Text = "0";
+            }
+            if (ort>=25 && ort<=44)
+            {
+                label6.Text = "1";
+            }
+            if (ort>=45 && ort<=54)
+            {
+                label6.Text = "2";
+            }
+            if (ort>=55 && ort<=69)
+            {
+                label6.Text = "3";
+            }
+            if (ort>=70 && ort<=84)
+            {
+                label6.Text = "4";
+            }
+            if (ort>=85 && ort<=100)
+            {
+                label6.Text = "5";
+            }
+            else
+            {
+                label6.Text = "Hatalı Not Girişi";
+            }
+          
+        }
+    }
+}
