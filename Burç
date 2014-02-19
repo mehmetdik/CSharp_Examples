@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Burc
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (comboBox1.Text=="KOÇ")
+            {
+                textBox1.Text = "Koç, Burçlar kuşağının ilk burcudur. Hareketli ve enerjik oluşları ile tanınırlar. Ben egoları çok fazla gelişmiştir. BEN, onların aynası olmuştur adeta. Bu burçta doğanlar çok pratiktirler. Olaylar karşısında coşkularını gizleyemezler. Yaşam yolunda canlılıklarını ve atılganlıklarını yitirmeden heyecanla ilerlerler.";
+            }
+            if (comboBox1.Text == "BALIK")
+            {
+                textBox1.Text = "Balıklar hassas ve alıngandırlar. Bu burçlar hassaslığı kadar hayalcidirler ve bir o kadar da romantiktirler. Bu burçtakiler sanatçı ruhludurlar onların bitmek bilmeyen hayal gücü harika eserler çıkarmalarına sebep olur. Naiftirler, kimseyi kırmak istemezler genelde kırılan taraf kendisi olacağını bilse de insanlara güvenmekten vazgeçmezler. Arkadaşlıkta sonsuz tahammülleri vardır ama siz bunu fazla zorlarsanız yaptığınızı asla unutmaz... ";
+            }
+            if (comboBox1.Text == "YENGEÇ")
+            {
+                textBox1.Text = "Yaşamlarındaki her konuda aşırı bir şekilde hassas, alıngan ve kuruntulu olan Yengeç\'leri tanımlayan sözcük \'Hissederim\' dir. Sorumluluk duyguları çok gelişmiştir. Her işte olağanüstü olan ayrıntıcılıkları, işlerinde mükemmeliyetçiliği getirir. Ayni sorumlulukları karşılarındakilerden de beklerler. Yengeç\'ler duygusallıkları ve duyarlılıkları ile tanınırlar. Çevresindeki her insandan da ayni hassasiyeti bekledikleri için, kolay geçinilir tipler değildir.";
+            }
+            if (comboBox1.Text == "AKREP")
+            {
+                textBox1.Text = "Akrepler kadar yaşamda tutkuyla yaşayan az insan vardır. Bu nedenle onları simgeleyen sözcük \'Arzuluyorum\' dur. Hiçbir şeyi yarım bırakmazlar. Akreplerin güçleri gözlerinden okunur. Mimiklerini kontrol altında tutsalar bile, bakışları ile sevgilerini ya da nefretlerini aktarabilirler. Duygularına kapılırlarsa, tehlikeli olabilirler. Akrep\'ler ukala ve kendini beğenmiş insanları sevmezler, onları aşağılayarak hadlerini bildirirler.";
+            }
+        }
+    }
+}
